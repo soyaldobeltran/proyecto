@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>The Oracle Post</title>
+</head>
+    
+<body>
+    <header class="header-bar">
+        <img  class="logo" src="./img/logo.png" alt="">
+    </header>
+    <div class="content">
+        <div class="title">
+            <h1>Consejos para entrar al nuevo paradigma
+            </h1>
+            <figure class="portada"></figure>
+        </div>
+        <article class="articulo">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse architecto eligendi expedita doloremque? Architecto hic consectetur aliquid in id soluta repellendus nisi, eius esse laboriosam aut dolor unde. Adipisci, dolorum.
+            </p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque odit dolore dolores blanditiis nesciunt assumenda atque at minus ab inventore illo, recusandae nihil perspiciatis quibusdam obcaecati quia saepe, autem maiores!</p>
+        </article>
+        <div class="title">
+            <h2>Mantra de la Semana
+            </h2>
+            <section class="frase">
+                <q>Si buscas resultados distintos, no hagas siempre lo mismo</q>
+            </section>
+        </div>
+        
+        <section class="libros-recomendados">
+            <h2>Libros recomendados</h2>
+            <br>
+            <div class="libros">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe quisquam culpa quasi, perspiciatis vel praesentium quae blanditiis laudantium, dicta minima atque nulla. Quibusdam mollitia, aliquid voluptates aut in consequuntur? Adipisci.</p>
+                <figure class="libro">
+                    <img src="https://www.nationalgeographic.com.es/medio/2020/03/27/cosmos-mundos-posibles_a47bbae4_500x748.jpg" alt="">
+                    <button class="libro-boton"><a target="_blank" href="https://www.amazon.com/es">VER MÁS</a></button>
+                </figure>
+                
+            
+            </div>
+        </section>
+
+    </div>
+    <footer class="footer">
+        <p class="p-footer">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit numquam temporibus deleniti sunt delectus, unde enim neque doloribus tempore saepe quas eligendi corporis placeat. Perferendis accusantium ad iste itaque dolor.</p>
+        <div class="redes">
+            <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+        </div>
+     </footer>
+       
+       
+    <style>
+        /* Generales */
+        *
+        {
+            font-family: Poiret One, Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        body
+        {
+            background-color: white;
+        }
+        p
+        {
+            font-size: 20px;
+        }
+        a
+        {
+            text-decoration: none;
+            color: black;
+        }
+        img
+        {
+            width: 100%;
+        }
+        .content 
+        {
+            padding: 0 1.5rem;
+        }
+        /* Portada | Header*/
+        
+        .header-bar
+        {
+            width: 100%;
+            height: 100px;
+            background-color: rgb(255, 183, 226) ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .header-bar .logo
+        {
+            height: 100%;
+            width: auto;
+        }
+
+        .title
+        {
+            padding-top: 1.5em;
+            font-size: 1.2rem;
+            
+        }
+        
+        .title h1 {
+            padding-bottom: 1rem;
+            border-bottom: solid 5px rgb(255, 183, 226); 
+            
+        }
+        .title .portada{
+            background: url(https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1211&q=80);
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 50vh;
+        }
+
+
+        /* Articulo */
+        .articulo
+        {
+            text-align: justify;
+            padding-top: 1.5rem;
+            
+        }
+        
+        /* Frases motivadoras */
+
+        .frase
+        {
+            
+            padding: 1.5rem 0;
+            margin: 1.5rem 0; 
+            width: 100%;
+            height: 70%; 
+            border-left: solid 5px rgb(255, 183, 226);
+            text-align: center;
+            font-size: larger;
+        }
+
+
+        /* Sección de Libros */
+        .libros-recomendados
+        {
+            margin: 3rem 0;
+            padding: 30px;
+            background-color: rgb(245, 245, 245);
+            text-align: center;
+        }
+        .libros
+        {
+            
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-content: space-around;
+            gap: 20px;
+        }
+        .libros img
+        {
+            margin-top: 1.5rem;
+            width: 200px;
+            height: 300px;
+            border-radius: 10px;
+        }
+
+        .libro
+        {
+            width: 200px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+        .libro .libro-boton
+        {
+            margin-top: .5rem;
+            padding: .5rem;
+            border-radius: 10px;
+            border-width: 2px;
+            border-color: rgb(255, 183, 226);
+        }
+
+        /* Footer */
+        .footer 
+        {
+            background: rgb(255, 183, 226);
+            width: 100%;
+            height: auto;
+            padding: 2rem 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .footer .p-footer
+        {
+            text-align: center;
+            font-size: 18px;
+            padding: 0 1.5rem;
+        }
+        .footer .redes 
+        {
+            width: 100%;
+            font-size: 18px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-content: space-around;
+            gap: 20px;
+        }
+    </style>
+</body>
+   
+</html>
